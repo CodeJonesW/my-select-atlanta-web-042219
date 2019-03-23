@@ -2,10 +2,9 @@ def my_select (collection)
   i = 0
   result = []
   while i < collection.length
-   if yield collection[i] == true
-     result.push(collection[i])
-   end
+   collection[i].even?
+   yield result.push(collection[i])
     i += 1
 end
-result
+collection
 end
