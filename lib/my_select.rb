@@ -2,11 +2,13 @@
 #   i = 0
 #   result = []
 #   while i < collection.length
-#   yield result.push(collection[i])
+#   if yield(collection[i]) == true
+    result.push(collection[i])
+  end
 #     i += 1
 # end
 # collection
-
+end
 
 
 def my_select(array) 
